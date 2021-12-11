@@ -1,5 +1,6 @@
 <template>
 	<div>
+    	<HomeNav/>
 		<section class="home" id="home">
 			<div class="content">
 				<h3>fresh coffe in the morgin</h3>
@@ -14,8 +15,14 @@
 
 
 <script>
+  	import HomeNav from '@/components/HomeNav';
+
 	export default{
-		name: 'Home'
+		name: 'Home',
+		components:{
+			HomeNav
+
+    	}
 	}
 </script>
 

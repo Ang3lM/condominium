@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <HomeNav/>
     <router-view/>
   </div>
 </template>
@@ -10,9 +9,5 @@
 
   export default{
     name: 'App',
-    components:{
-      HomeNav
-
-    }
   }
 </script>

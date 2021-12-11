@@ -4,7 +4,7 @@
 	    <b-navbar-toggle v-b-toggle.sidebar-no-header target="nav-collapse"></b-navbar-toggle>
 	    <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
-      <template class="practi">
+      <!-- <template class="practi">
       	<b-sidebar class="ang" id="sidebar-no-header" aria-labelledby="sidebar-no-header-title" no-header shadow>
 	        <template #default="{ hide }">
 	          <div class="p-3">
@@ -24,17 +24,17 @@
 	          </div>
 	        </template>
       	</b-sidebar>
-      </template>
+      </template> -->
 
-	    <!-- <b-collapse id="nav-collapse" is-nav>
+	    <b-collapse id="nav-collapse" is-nav>
 	      <b-navbar-nav>
 	        <b-nav-item href="#">Link</b-nav-item>
-	        <b-nav-item class="d-block d-sm-block d-sm-none" href="#" v-if="">Inicie sesion</b-nav-item>
+	        <b-nav-item class="d-block d-sm-block d-sm-none" href="#">Inicie sesion</b-nav-item>
 	      </b-navbar-nav>
 
-	    </b-collapse> -->
+	    </b-collapse>
       <b-navbar-nav class="d-none d-xs-none d-sm-block" right>
-				<b-nav-item href="#">Inicie sesion</b-nav-item>
+				<b-nav-item href="/login">Inicie sesion</b-nav-item>
       </b-navbar-nav>
 	  </b-navbar>
 	</div>
@@ -47,10 +47,7 @@
 </script>
 
 <style scoped>
-	.ang > .b-sidebar {
-    position: fixed;
-    bottom: -65px;
-	}
+	
 
 
 </style>
