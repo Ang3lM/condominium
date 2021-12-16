@@ -31,8 +31,11 @@
                             </b-form-input>
                             
                         </b-input-group>
-                        <b-link href="/signup">¿No tienes cuenta?</b-link>
-                        <b-button class="btn-login">Iniciar Session</b-button>
+                        <b-link to="signup">¿No tienes cuenta?</b-link>
+                        <b-button 
+                        class="btn-login"
+                        @click="setSession()"
+                        >Iniciar Session</b-button>
 
                     </b-form>
                 </div>
@@ -43,12 +46,25 @@
 </template>
 
 <script>
+    import {mapState, mapMutations} from 'vuex';
     export default {
         name: 'Login',
         data(){
             return {
                 email: '',
                 password: '',
+            }
+        },
+        computed: {
+            ...mapState('login', ['session']),
+        },
+        methods: {
+            ...mapMutations('login', ['setSessionUser', 'setNav']),
+            setSession(){
+                this.setSessionUser(true);
+                this.setNav('main');
+
+                this.$router.push('/news');
             }
         }
         

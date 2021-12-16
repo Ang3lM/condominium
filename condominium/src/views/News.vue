@@ -1,17 +1,44 @@
 <template>
     <div>
-        <MainNav/> 
+        <!-- <MainNav/>  -->
         <div class="container">
             <div class="menu">
-                <b-nav vertical >
+                <b-nav vertical pills>
                     <b-nav-item to="news" active>news</b-nav-item>
                     <b-nav-item to="#">Eventos</b-nav-item>
-                    <b-nav-item to="#">Another Link</b-nav-item>
-                    <b-nav-item to="#" >Disabled</b-nav-item>
+                    <b-nav-item to="#">Grupos</b-nav-item>
+                    <b-nav-item to="#" >Reuniones</b-nav-item>
                 </b-nav>
             </div>
             <div class="news">
-                <b-card
+                <b-card bg-variant="dark" text-variant="white" title="Remodelacion de Cancha">
+                    <b-img src=""></b-img>
+                    <b-card-text>
+                        Para la remodelacion dela cancha se necesita de una colaboracion
+                        con la cual se pintara y se le pondra alumbrado.
+                    </b-card-text>
+                    <b-button href="#" variant="primary">leer mas</b-button>
+                </b-card>
+
+                <b-card class="mt-4" bg-variant="secondary" text-variant="white" title="Nuevo miembro de la junta directiva">
+                    <b-img src=""></b-img>
+                    <b-card-text>
+                        Se estara incomporando un nuevo miembro a la junta directiva, con el
+                        cual se necesitara de la aprobacion de los residentes del condomio.
+                    </b-card-text>
+                    <b-button href="#" variant="primary">leer mas</b-button>
+                </b-card>
+
+                <b-card class="mt-4"  bg-variant="dark" text-variant="white" title="Decoracion navideña">
+                    <b-img src=""></b-img>
+                    <b-card-text>
+                        Para la decoracion navideña a todo el resinto del condominio 
+                        se necesitara del apoyo y la colaboracion de todos los residentes
+                        del condominio.
+                    </b-card-text>
+                    <b-button href="#" variant="primary">leer mas</b-button>
+                </b-card>
+                <!-- <b-card
                     title="Card Title"
                     img-src="https://picsum.photos/600/300/?image=25"
                     img-alt="Image"
@@ -25,7 +52,7 @@
                     </b-card-text>
 
                     <b-button href="#" variant="primary">Go somewhere</b-button>
-                </b-card>
+                </b-card> -->
             </div>
         </div>
     </div>
@@ -41,9 +68,9 @@ export default {
             
         }
     },
-    components: {
-        MainNav
-    }
+    // components: {
+    //     MainNav
+    // }
     
 }
 </script>
@@ -57,13 +84,13 @@ export default {
         margin-top: 1%;
 
     }
-    .container .menu{
+    /* .container .menu{
         border-style: solid;
 		border-color: blue;
-    }
+    } */
     .container .news{
-        border-style: solid;
-		border-color: red;
+        /* border-style: solid;
+		border-color: red; */
         margin-right: 6%;
     }
     .menu .nav-item .nav-link:focus{

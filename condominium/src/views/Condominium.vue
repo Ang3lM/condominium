@@ -1,16 +1,28 @@
 <template>
     <div>
         <div class="container">
-            <div class="menu-services">
+            <div class="menu-condominium">
                 <b-nav vertical pills>
-                    <b-nav-item to="services" active>services</b-nav-item>
-                    <b-nav-item to="#">provedor</b-nav-item>
+                    <b-nav-item to="condominiums" active>condominium</b-nav-item>
+                    <b-nav-item to="#">propiedades</b-nav-item>
                 </b-nav>
             </div>
-            <div class="services">
+            <div class="condominium">
                 <b-card
-                    title="Servicio de Gas Domestico"
-                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NpY0bjDSZNQOi7v8WLCIwHaHa%26pid%3DApi&f=1"
+                class="condominium-card-img"
+                >
+                    <img class="condominium-img" src="@/assets/condominium.jpeg" alt="">
+                    <div class="condominium-text">
+                        <h4>Condominio los jardines</h4>
+                        <b-card-text>
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </b-card-text>
+                    </div>
+                </b-card>
+
+                <b-card
+                    title="Condominio los Valles"
+                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.dDHLPnxdona_zwVlASgIxQHaEH%26pid%3DApi&f=1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -23,8 +35,8 @@
                 </b-card>
 
                 <b-card
-                    title="Servicio de Telefonia"
-                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Fi8U_qC7ZCBWpq-YCQvTsAHaEq%26pid%3DApi&f=1"
+                    title="Condominio 14 de Febrero"
+                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.PBCek292DeLEOsGEO-GDvQHaE8%26pid%3DApi&f=1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -37,8 +49,8 @@
                 </b-card>
 
                 <b-card
-                    title="Servicio de Internet"
-                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.-FO5x6W1Pj3X7_S24MqaRQHaE0%26pid%3DApi&f=1"
+                    title="Condominio los rosales"
+                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VGy3gqwCnZMfqQlJWU63XQHaEG%26pid%3DApi&f=1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -51,8 +63,8 @@
                 </b-card>
 
                 <b-card
-                    title="Servicio de Luz"
-                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Bz90iR2kG-UPbgDVqwASpQHaGH%26pid%3DApi&f=1"
+                    title="Condominio jirajara"
+                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.32PMfR5fBS7Z7yqc_xRjGgHaE8%26pid%3DApi&f=1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -65,22 +77,8 @@
                 </b-card>
 
                 <b-card
-                    title="servicio de Agua"
-                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yma7UVzqQkqDM2yZeUTyyQHaE7%26pid%3DApi&f=1"
-                    img-alt="Image"
-                    img-top
-                    tag="article"
-                    style="max-width: 20rem;"
-                    class="mb-2"
-                >
-                    <b-card-text>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </b-card-text>
-                </b-card>
-
-                <b-card
-                    title="Cable Imagen"
-                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.LBtA_M9Gm_VcVgkRch9ZOQHaEK%26pid%3DApi&f=1"
+                    title="Condominio las Torres"
+                    img-src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.G0TzCDV9-mvJEQpRU8C4fQHaD7%26pid%3DApi&f=1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -98,7 +96,7 @@
 
 <script>
     export default {
-        name: 'Services',
+        name: 'condominium',
         data() {
             return {
 
@@ -118,11 +116,11 @@
         min-height: 100vh;
 
     }
-    /* .container .menu-services{
+    /* .container .menu-condominium{
         border-style: solid;
 		border-color: blue;
     } */
-    .container .services{
+    .container .condominium{
         display: grid;
         border-style: solid;
 		border-color: red;
@@ -130,10 +128,32 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
-    .menu-services .nav-item .nav-link:focus{
+    .menu-condominium .nav-item .nav-link:focus{
         background-color: grey;
         color: black;
 
+    }
+    .container .condominium .condominium-card-img .card-body{
+        /* border-style: solid;
+		border-color: red; */
+        margin:0;
+        padding:0;
+        
+        /* max-width: 50%; */
+        /* margin-right: 70%; */
+    }
+    .container .condominium .condominium-card-img .condominium-img{
+        /* border-style: solid;
+		border-color: red; */
+        /* border-top-left-radius: calc(1px);
+        border-top-right-radius: calc(1px) */
+
+        max-width: 100%;
+        /* margin-right: 70%; */
+    }
+    .container .condominium .condominium-card-img .condominium-text{
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
     }
     
 </style>

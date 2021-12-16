@@ -1,6 +1,6 @@
 <template>
 	<div>
-    	<HomeNav/>
+    	<!-- <HomeNav/> -->
 		<section class="home" id="home">
 			<div class="content">
 				<h3>fresh coffe in the morgin</h3>
@@ -19,10 +19,10 @@
 
 	export default{
 		name: 'Home',
-		components:{
-			HomeNav
+		// components:{
+		// 	HomeNav
 
-    	}
+    	// }
 	}
 </script>
 
