@@ -8,13 +8,16 @@
 					<b-nav-item  class="news" to="/news">News</b-nav-item>
 					<b-nav-item  class="services" to="/services">services</b-nav-item>
 					<b-nav-item  class="condominium" to="/condominiums">condominios</b-nav-item>
+					<b-nav-item class="payments" to="/properties">properties</b-nav-item>
 					<b-nav-item class="receipts" to="/receipts">Recibos</b-nav-item>
 					<b-nav-item class="payments" to="/payments">Pagos</b-nav-item>
+
+					
 
 					<b-nav-item-dropdown class="mierda">
 						<!-- Using 'button-content' slot -->
 						<template #button-content>
-							<em>User</em>
+							<span>User</span>
 						</template>
 						<b-dropdown-item to="#">Profile</b-dropdown-item>
 						<b-dropdown-item to="/" @click="SetSession">Sign Out</b-dropdown-item>
