@@ -83,15 +83,47 @@
                     <template  #footer>
                         <div class="footer-receipts">
                             <div class="receipts-modal">
-                                <b-button id="show-btn" @click="$bvModal.show('bv-modal-example')">Pagar</b-button>
-                                <b-modal id="bv-modal-example" hide-footer>
+                                <b-button id="show-btn" @click="$bvModal.show('bv-modal-example1')">Pagar</b-button>
+                                <b-modal id="bv-modal-example1"  hide-backdrop size="xl" hide-footer>
                                     <template #modal-title>
-                                    Using <code>$bvModal</code> Methods
+                                        Validar Pagos
                                     </template>
-                                    <div class="d-block text-center">
+                                    <form>
+                                        <b-row>
+                                            <b-col>
+                                                <p>Fecha de Pago</p>
+                                                <p>08/09/2021</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Reference</p>
+                                                <p>4565456623</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Amount</p>
+                                                <p>225.346.454,00</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>conciled</p>
+                                                <b-form-checkbox
+                                                id="checkbox-1"
+                                                v-model="status"
+                                                name="checkbox-1"
+                                                >
+                                                </b-form-checkbox>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Banck account</p>
+                                                <p>Banesco-0134-040110-4011110596</p>
+                                            </b-col>
+                                        </b-row>
+                                    </form>
+                                    
+                                    
+                                    <!-- <div class="d-block text-center">
                                     <h3>Hello From This Modal!</h3>
-                                    </div>
-                                    <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')">Close Me</b-button>
+                                    </div> -->
+                                    <b-button @click="hideModal('bv-modal-example1')">Close Me</b-button>
+                                    <b-button @click="toggleModal('bv-modal-example1')">Toggle Me</b-button>
                                 </b-modal>
                             </div>
                             <div class="receipts-price">
@@ -190,15 +222,42 @@
                     <template  #footer>
                         <div class="footer-receipts">
                             <div class="receipts-modal">
-                                <b-button id="show-btn" @click="$bvModal.show('bv-modal-example')">Pagar</b-button>
-                                <b-modal id="bv-modal-example" hide-footer>
+                                <b-button id="show-btn" @click="$bvModal.show('bv-modal-example2')">Pagar</b-button>
+                                <b-modal id="bv-modal-example2"  hide-backdrop size="xl" hide-footer>
                                     <template #modal-title>
-                                    Using <code>$bvModal</code> Methods
+                                        validar pagos
                                     </template>
-                                    <div class="d-block text-center">
-                                    <h3>Hello From This Modal!</h3>
-                                    </div>
-                                    <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')">Close Me</b-button>
+                                    <form>
+                                        <b-row>
+                                            <b-col>
+                                                <p>Fecha de Pago</p>
+                                                <p>08/09/2021</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Reference</p>
+                                                <p>4565456623</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Amount</p>
+                                                <p>225.346.454,00</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>conciled</p>
+                                                <b-form-checkbox
+                                                id="checkbox-2"
+                                                v-model="status"
+                                                name="checkbox-2"
+                                                >
+                                                </b-form-checkbox>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Banck account</p>
+                                                <p>Banesco-0134-040110-4011110596</p>
+                                            </b-col>
+                                        </b-row>
+                                    </form>
+                                    <b-button @click="hideModal('bv-modal-example2')">Close Me</b-button>
+                                    <b-button @click="toggleModal('bv-modal-example2')">Toggle Me</b-button>
                                 </b-modal>
                             </div>
                             <div class="receipts-price">
@@ -296,15 +355,42 @@
                     <template  #footer>
                         <div class="footer-receipts">
                             <div class="receipts-modal">
-                                <b-button id="show-btn" @click="$bvModal.show('bv-modal-example')">Pagar</b-button>
-                                <b-modal id="bv-modal-example" hide-footer>
+                                <b-button id="show-btn" @click="$bvModal.show('bv-modal-example3')">Pagar</b-button>
+                                <b-modal id="bv-modal-example3"  hide-backdrop  size="xl" hide-footer>
                                     <template #modal-title>
-                                    Using <code>$bvModal</code> Methods
+                                        Validar Pagos
                                     </template>
-                                    <div class="d-block text-center">
-                                    <h3>Hello From This Modal!</h3>
-                                    </div>
-                                    <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')">Close Me</b-button>
+                                    <form>
+                                        <b-row>
+                                            <b-col>
+                                                <p>Fecha de Pago</p>
+                                                <p>08/09/2021</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Reference</p>
+                                                <p>4565456623</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Amount</p>
+                                                <p>225.346.454,00</p>
+                                            </b-col>
+                                            <b-col>
+                                                <p>conciled</p>
+                                                <b-form-checkbox
+                                                id="checkbox-1"
+                                                v-model="status"
+                                                name="checkbox-1"
+                                                >
+                                                </b-form-checkbox>
+                                            </b-col>
+                                            <b-col>
+                                                <p>Banck account</p>
+                                                <p>Banesco-0134-040110-4011110596</p>
+                                            </b-col>
+                                        </b-row>
+                                    </form>
+                                    <b-button @click="hideModal('bv-modal-example3')">Close Me</b-button>
+                                    <b-button @click="toggleModal('bv-modal-example3')">Toggle Me</b-button>
                                 </b-modal>
                             </div>
                             <div class="receipts-price">
@@ -349,9 +435,25 @@
         name: 'Receipts',
         data(){
             return {
+                status: ''
             
             }
         },
+        methods: {
+            showModal() {
+                this.$root.$emit('bv::show::modal', 'bv-modal-example1')
+            },
+            hideModal(modalId) {
+                console.log('hideModallllllllllllllllllllllllllllll');
+                console.log(modalId)
+                this.$root.$emit('bv::hide::modal', modalId)
+            },
+            toggleModal(modalId) {
+                console.log('toggleModallllllllllllllllllllllllllll');
+                console.log(modalId);
+                this.$root.$emit('bv::toggle::modal', modalId)
+            }
+        }
         // components : {
         //     MainNav
         // }
